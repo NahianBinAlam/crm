@@ -1,0 +1,2 @@
+# crm
+ python django project
