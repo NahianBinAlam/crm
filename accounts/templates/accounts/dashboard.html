@@ -50,7 +50,7 @@
 					<td>{{i.date_created}}</td>
 					<td>{{i.status}}</td>
 					<td><a class="btn btn-sm btn-info" href="{% url 'update_order' i.id %}">update</a></td>
-					<td><a class="btn btn-sm btn-danger" href="">delete</a></td>
+					<td><a class="btn btn-sm btn-danger" href="{% url 'delete_order' i.id %}">delete</a></td>
 				</tr>
 				{% endfor %}
 		
