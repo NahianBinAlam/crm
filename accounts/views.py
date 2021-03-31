@@ -108,8 +108,8 @@ def accountSettings(request):
 	context = {'form':form}
 	return render(request, 'accounts/account_settings.html', context)
 
-@login_required(login_url='login')
-@allowed_users(allowed_roles=['admin'])
+#@login_required(login_url='login')
+#@allowed_users(allowed_roles=['admin'])
 def products(request):
 	products = product.objects.all()
 	return render(request, 'accounts/products.html',{'products':products})
